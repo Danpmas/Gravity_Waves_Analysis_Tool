@@ -3,14 +3,12 @@
 
 ## Introduction
 
-Hello, thank you for using the Gravity Wave analysis tool. This tool was created in a semester-long project course called CSC 380 at Suny Oswego University. This tool was also made with the help form Dr.Barber,
-Dr.Kanbur and Dr.Tenbergen at Suny Oswego University and Dr.Gong at the NASA Goddard Space center. This tool is great for quick analysis of Radiosonde Data to get a set list of parameters from GDL, and a set list
-of Graphs. These results will be placed into a PDF which you can then download onto your computer for use outside of our website.
+This GitHub repository is for the Gravity Wave Analysis Tool (GWAT), a tool created during the semester-long project course called CSC 380 at SUNY Oswego. GWAT was created with the help of Dr. Jie Gong from the NASA Goddard Space Center and Dr. Katlelyn Barber, Dr. Shashi Kanbur, and Dr. Bastian Tenbergen from SUNY Oswego. This web tool was designed for quick analysis of radiosonde data, providing a set list of parameters from GDL, and a set list of graphs. These results are placed into a PDF which can then be download onto the user's computer for use outside of the web tool.
 
 ## How to Access
-This Website has been graciously been hosted for free, by the Suny Oswego Computer Science department and Dr.Tenbergen at http://moxie.cs.oswego.edu:10761/
+This Website has been graciously been hosted for free, by the Suny Oswego Computer Science Department and Dr. Tenbergen at http://moxie.cs.oswego.edu:10761/
 
-However if for some reason the link does not work or you wish to setup this website on your computer or a server below is a guide to deploy the website.
+If the link does not work or a user wishes to setup this website on their computer or server, a complete guide to deploy the website is provided below:
 
 ## Authors
 
@@ -25,22 +23,21 @@ Justyce Countryman: countrymanjustyce2002@gmail.com, [Github](https://github.com
 
 Tim Dube [Portfolio](https://timmydube.vercel.app/) 
 
-###### Special Thanks to
-Dr.Barber for suggesting such great additions and features and helping us with all the science behind this tool. 
+###### Special Thanks
+Dr. Katelyn Barber for input on additions and features to improve the functionality of the tool.  
 
-Dr.Kanbur for meeting with us and connecting us with Dr.Gong and helping orientate ourselves when this project started. 
+Dr. Shashi Kanbur for coordinating with Dr. Jie Gong and introducing the team to Dr. Jie Gong.
 
-Dr.Gong for being our lighthouse and giving us the code needed to run GDL. Your work and effort put into that code has made this project possible and for visiting us at suny oswego.
+Dr. Jie Gong for providing detailed guidance and methods that were used for replicating IDL graphs in the python code, and providing the IDL code which was used for GDL.
 
-Dr.Tenbergen for helping us be the best we could be and for pushing us to work hard everyday. This project would have long ago failed if it was not for your constant guidance, support and teaching that you do everyday. Keep being awesome. 
-
+Dr. Bastian Tenbergen for providing the opportunity to work on this project and teaching the team how to think and work like a software engineer.
 
 ## How to Deploy
-There is only one dependency for this tool that is not included with our code and that is Docker. You will need to install and set up docker on your computer to host this website. 
+There is only one dependency for this tool that is not included with this code and that is Docker. You will need to install and set up docker on your computer to host this website. 
 Please follow this [Link](https://www.docker.com/get-started/) to do that first. If you are setting this up on a server or a different machine please reach out to the server manager or machine manager and ask them to set up docker. 
 If you are the manager please follow this [Link](https://docs.docker.com/engine/install/), and this [Link](https://docs.docker.com/compose/install/#:~:text=Docker%20Desktop%20includes%20Docker%20Compose,CLI%20which%20are%20Compose%20prerequisites.). Once the docker engine or docker desktop is installed and running on your server/computer follow the steps below. 
 
-For deploying this website on a computer or laptop follow these instructions:
+For deploying this website on a computer or laptop, follow these instructions:
 1. Please click this link [Link](https://github.com/Tomicgun/Gravity-Waves-Analysis-Tool) to the public repository containing this guide and the code.
 2. Copy the docker-compose.yaml file to your computer you can do this by using the github command line, if you are familiar with it, or use this [link](https://github.com/Tomicgun/Gravity-Waves-Analysis-Tool/releases/tag/v1.0) and click on the file shown bellow
 ![alt text](https://github.com/Tomicgun/Gravity-Waves-Analysis-Tool/blob/main/Images/Screenshot%202024-04-24%20095515.jpg)
@@ -65,24 +62,24 @@ For deploying this website on a computer or laptop follow these instructions:
 ![alt text][Image3]
 
 
-10. There you go you should have the containers setup and running on your pc
+10. By this stage, the containers should be setup and running on your PC
 
 For deploying this website on a server follow these instructions:
 1. Open up the server termianl run these two commands docker pull dzaug/csc380_back_end_image and docker pull dzaug/csc380_front_end_image
 2. Copy the docker-compose.yaml file onto the server
 3. Traverse to the folder that contains the docker-compose.yaml file
-4. run this command docker compose up or docker-compose up (if on a older version of docker engine)
-5. You should now have it running on your server this program defualts to port 10761 if you need to change the port please look at the important notes section.
+4. Run this command docker compose up or docker-compose up (if on a older version of docker engine)
+5. You should now have it running on your server this program defaults to port 10761 if you need to change the port please look at the important notes section.
 
 ### How to Un-deploy
-1. Open up your server/computer command line traverse directories until you are at the directory that contains the docker-compose.yaml file.Then run the docker compose down command or docker-compose down (if on a older version of docker engine)
+1. Open up your server/computer command line traverse directories until you are at the directory that contains the docker-compose.yaml file. Then run the docker compose down command or docker-compose down (if on a older version of docker engine)
 3. If you are on a computer, open up docker desktop and open the volumes tab and delete the csc380_pdf-out and the csc380_text-in. If you are on a server then run these two commands docker volume rm csc380_pdf-out and docker volume rm csc380_text-in
 
 
 ![alt text][Image4]
 
 
-4. That's it you have now taken down the two containers and cleaned up the volumes. 
+4. By this stage, you should now have taken down the two containers and cleaned up the volumes. 
 
 ### Important Notes
 
@@ -168,10 +165,10 @@ These Parameters are repeated twice, once for the Troposphere and one for the St
 
 
 ## Credits Page
-1. Dr.Dong Jie Gong (2009):Characteristics of Two Gravity Wave Sources in the US High Vertical-resolution Radiosonde Data,PhD. thesis
-2. Dr. Kanbur
-3. Dr. Barver
-4. Dr. Tenbergen
+1. Dr. Jie Gong (2009):Characteristics of Two Gravity Wave Sources in the US High Vertical-resolution Radiosonde Data, PhD. thesis
+2. Dr. Shashi Kanbur
+3. Dr. Katelyn Barber
+4. Dr. Bastian Tenbergen
 
 [Image1]: https://github.com/Tomicgun/Gravity-Waves-Analysis-Tool/blob/main/Images/Screenshot%202024-04-21%20172442.jpg
 [Image2]: https://github.com/Tomicgun/Gravity-Waves-Analysis-Tool/blob/main/Images/Screenshot%202024-04-21%20173852.jpg
