@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This GitHub repository is for the Gravity Wave Analysis Tool (GWAT), a tool created during the semester-long project course called CSC 380 at SUNY Oswego. GWAT was created with the help of Dr. Jie Gong from the NASA Goddard Space Center and Dr. Katlelyn Barber, Dr. Shashi Kanbur, and Dr. Bastian Tenbergen from SUNY Oswego. This web tool was designed for quick analysis of radiosonde data, providing a set list of parameters from GDL, and a set list of graphs. These results are placed into a PDF which can then be download onto the user's computer for use outside of the web tool.
+This GitHub repository is for the Gravity Wave Analysis Tool (GWAT), a tool created during the semester-long software engineering course project at SUNY Oswego. GWAT was created with the help of Dr. Jie Gong from the NASA Goddard Space Center and Dr. Katlelyn Barber, Dr. Shashi Kanbur, and Dr. Bastian Tenbergen from SUNY Oswego. This web tool was designed for quick analysis of radiosonde data, providing a set list of parameters from GDL, and a set list of graphs. These results are placed into a PDF which can then be download onto the user's computer for use outside of the web tool.
 
 ## How to Access
 This Website has been graciously been hosted for free, by the Suny Oswego Computer Science Department and Dr. Tenbergen at http://moxie.cs.oswego.edu:10761/
